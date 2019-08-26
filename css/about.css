@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ---------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Patua One', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+/* ---------------------------------------- */
+colorTest {
+  color: #FFCC99;
+  color: #FF9966;
+  color: #CC6666;
+  color: #993366;
+}
+body {
+  background-color: #993366;
+}
+header {
+  border-bottom: 2px dashed silver;
+}
+header section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+header section div {
+  margin-top: 3%;
+}
+header section nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 416px;
+  margin-top: 3%;
+}
+header section nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+  width: 100px;
+  background-color: #FF9966;
+  border-radius: 20px;
+}
+header section a:hover {
+  color: white;
+  background-color: #CC6666;
+}
+header section .navLeft {
+  margin-right: 5%;
+}
+@media (max-width: 790px) {
+  header section {
+    max-width: 790px;
+    flex-direction: column;
+  }
+  header section div {
+    width: 100%;
+    text-align: center;
+  }
+  header section nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 610px) {
+  header section {
+    max-width: 500px;
+    flex-direction: column;
+  }
+  header section div {
+    width: 100%;
+    text-align: center;
+  }
+  header section nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.gradientSection {
+  background-image: linear-gradient(#993366, #FFCC99);
+}
+.top-area {
+  margin: 0px auto 10px auto;
+}
+.top-area h2 {
+  margin-top: 20px;
+}
+.top-area img {
+  border-radius: 1rem;
+  width: 100%;
+}
+@media (max-width: 610px) {
+  .top-area {
+    margin-bottom: 0px;
+  }
+}
+.text-and-login {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.text-and-login .login-area {
+  display: flex;
+  flex-direction: column;
+  background-color: #993366;
+  border: 2px solid #FF9966;
+  border-radius: 25% 5%;
+  min-width: 25%;
+  min-height: 5rem;
+  margin-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+.text-and-login .button {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  padding: 5px 10px 5px 10px;
+  width: 100px;
+  background-color: #FF9966;
+  border-radius: 20px;
+}
+.text-and-login .button:hover {
+  color: white;
+  background-color: #CC6666;
+}
+.text-and-login .forgot {
+  color: #FFCC99;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.text-and-login .forgot:hover {
+  font-weight: bold;
+}
+@media (max-width: 610px) {
+  .text-and-login {
+    flex-direction: column-reverse;
+  }
+  .text-and-login .login-area {
+    width: 100%;
+    flex-direction: row;
+    margin-left: 0rem;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border-radius: 2rem;
+  }
+}
+.content-pick,
+.content-pick2 {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.content-pick .options,
+.content-pick2 .options {
+  width: 30%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FF9966;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 3px solid #CC6666;
+}
+.content-pick img,
+.content-pick2 img {
+  border-radius: 1rem;
+}
+@media (max-width: 610px) {
+  .content-pick,
+  .content-pick2 {
+    border-radius: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-pick .options,
+  .content-pick2 .options {
+    width: auto;
+    max-width: 90%;
+  }
+}
+.content-pick2 {
+  padding-top: 10px;
+}
+@media (max-width: 610px) {
+  .content-pick2 {
+    padding-top: 0px;
+  }
+}
+footer {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  background-color: #993366;
+}
+footer div {
+  color: #FFCC99;
+}
+footer div p {
+  font-size: 1.25rem;
+}
+.header2 {
+  background-color: #993366;
+}
+.gradientAboutSection {
+  background-image: linear-gradient(#FFCC99, #993366);
+}
+.aboutUs {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.aboutUs .options {
+  width: 48%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FF9966;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 3px solid #CC6666;
+}
+.aboutUs img {
+  border-radius: 1rem;
+}
+.aboutUs p {
+  line-height: 1.8rem;
+}
+@media (max-width: 610px) {
+  .aboutUs {
+    border-radius: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutUs .options {
+    width: auto;
+    max-width: 90%;
+  }
+}
