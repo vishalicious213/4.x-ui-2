@@ -207,12 +207,28 @@ header section nav a {
   background-color: #FF9966;
   border-radius: 20px;
 }
-header section a:hover {
+header section nav a:hover {
   color: white;
   background-color: #CC6666;
 }
-header section .navLeft {
+header section nav .navLeft {
   margin-right: 5%;
+}
+header section nav .themeOptions {
+  padding: 5px 0px 5px 0px;
+  width: 2.5rem;
+}
+header section nav .AfiaTheme {
+  background-color: #CC6666;
+  margin-right: 1%;
+}
+header section nav .EricTheme {
+  background-color: #993366;
+}
+header section nav .AfiaTheme:hover,
+header section nav .EricTheme:hover {
+  background-color: #FFCC99;
+  border: 2px solid #FF9966;
 }
 @media (max-width: 800px) {
   header section {
